@@ -1,0 +1,29 @@
+ye its complicated ;-; ur gonna have to start from the top and close that git window and remove any git related stuff from the project folder ur using then follow this:
+
+git init
+
+git lfs install
+
+`git lfs track "*.psd"
+git lfs track "*.dylib"
+git lfs track "*.resS"
+git lfs track "*.bc"`
+
+touch .gitignore
+
+vi .gitignore
+> right click and select paste to paste this text:
+> /[Ll]ibrary/ArtifactDB
+> press ESC then type :wq and press ENTER
+
+git add .
+
+git commit -m "First commit"
+
+git branch -M main
+
+git remote add origin https://github.com/user/name.git
+
+git remote -v
+
+git push origin main

@@ -1,0 +1,648 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.29f1 (204d6dc9ae1c) revision 2116973'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 15745 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.29f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/javon/Desktop/Ruby-Adventure-main
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+63522
+Successfully changed project path to: C:/Users/javon/Desktop/Ruby-Adventure-main
+C:/Users/javon/Desktop/Ruby-Adventure-main
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [9976] Host "[IP] 192.168.86.85 [Port] 0 [Flags] 2 [Guid] 4236045181 [EditorId] 4236045181 [Version] 1048832 [Id] WindowsEditor(7,NoodleBoy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [9976] Host "[IP] 192.168.86.85 [Port] 0 [Flags] 2 [Guid] 4236045181 [EditorId] 4236045181 [Version] 1048832 [Id] WindowsEditor(7,NoodleBoy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 130.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.29f1 (204d6dc9ae1c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/javon/Desktop/Ruby-Adventure-main/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Graphics (ID=0x1638)
+    Vendor:   ATI
+    VRAM:     7872 MB
+    Driver:   31.0.12027.9001
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56176
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004237 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 143.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.729 seconds
+Domain Reload Profiling:
+	ReloadAssembly (730ms)
+		BeginReloadAssembly (79ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (553ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (102ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (360ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (143ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (151ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007234 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 136.91 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.717 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1718ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1499ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (274ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (87ms)
+			SetupLoadedEditorAssemblies (1003ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (137ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (635ms)
+				ProcessInitializeOnLoadMethodAttributes (100ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5412 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (0.8 MB). Loaded Objects now: 5869.
+Memory consumption went from 212.8 MB to 212.1 MB.
+Total: 5.209600 ms (FindLiveObjects: 0.734900 ms CreateObjectMapping: 0.411400 ms MarkObjects: 3.728500 ms  DeleteObjects: 0.333800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 265136.072597 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassSquare_7.asset
+  artifactKey: Guid(8a4889ddddc68144db23cb893b4bb4cf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassSquare_7.asset using Guid(8a4889ddddc68144db23cb893b4bb4cf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'af74f7df3c1d2ceafbf8173360f38bd6') in 0.236531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/DEMO/Animation/Cows-Animations/Cow-Dark-1/Idle-CD1.anim
+  artifactKey: Guid(d9a1596cf3fcd9f479f93587c87f9204) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Cows-Animations/Cow-Dark-1/Idle-CD1.anim using Guid(d9a1596cf3fcd9f479f93587c87f9204) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5412afa7d8223d9ae154f840dae2fec7') in 0.020663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/DEMO/Animation/Chickens/Chicken-White-2/Chicken-White-2.controller
+  artifactKey: Guid(16b989442c8d035438f83318e9b8412f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Chickens/Chicken-White-2/Chicken-White-2.controller using Guid(16b989442c8d035438f83318e9b8412f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cdb18c6b0a7b87335c9fc3f63b78afc9') in 0.015814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/DEMO/Animation/Cows-Animations/Cow-Green-1/Hurt-CG1.anim
+  artifactKey: Guid(5b19a04092d16f94c93592b2269d7cb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Cows-Animations/Cow-Green-1/Hurt-CG1.anim using Guid(5b19a04092d16f94c93592b2269d7cb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '34364c026628e785fec5b61ba6190bf1') in 0.018369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/DEMO/Animation/Cows-Animations/Cow-Green-1/Attack-CG1.anim
+  artifactKey: Guid(ba3e9fc6df3da6a4e9866efd8e036178) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Cows-Animations/Cow-Green-1/Attack-CG1.anim using Guid(ba3e9fc6df3da6a4e9866efd8e036178) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2462d5c8170c2743ea521426f4f7f7fa') in 0.019609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/DEMO/Animation/Cows-Animations/Cow-White-1/Die-CW1.anim
+  artifactKey: Guid(5c2ac04b225f9564397c5846796dc48f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Cows-Animations/Cow-White-1/Die-CW1.anim using Guid(5c2ac04b225f9564397c5846796dc48f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '634a86dd2842108692c637ef75f43161') in 0.012538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/DEMO/Animation/Cows-Animations/Cow-Minner-1/Walk-CM1.anim
+  artifactKey: Guid(9cea501f2249554438e6357d44ed91fb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Cows-Animations/Cow-Minner-1/Walk-CM1.anim using Guid(9cea501f2249554438e6357d44ed91fb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a81399499c1db004f8cc0b1347c87f51') in 0.013807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Dark-1/Idle-PD1.anim
+  artifactKey: Guid(d8e7158b082be804e91fcf1fa76222fe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Dark-1/Idle-PD1.anim using Guid(d8e7158b082be804e91fcf1fa76222fe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e97c882d76dc1ccf4fe641695735869a') in 0.013627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/DEMO/Animation/Cows-Animations/Cow-Green-1/Walk-CG1.anim
+  artifactKey: Guid(cd24633e70e74f244abf1894dd26e173) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Cows-Animations/Cow-Green-1/Walk-CG1.anim using Guid(cd24633e70e74f244abf1894dd26e173) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '73f07934fbfc8805baf5a7a2011da54f') in 0.013087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/DEMO/Animation/Chickens/Chicken-Minner-2/Walk-CHM2.anim
+  artifactKey: Guid(339457160be6d43428e56ef947bda2ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Chickens/Chicken-Minner-2/Walk-CHM2.anim using Guid(339457160be6d43428e56ef947bda2ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd1ffd34b3826fe410377b8ee426e9c9f') in 0.013295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/DEMO/Animation/Chickens/Chicken-White-1/Attack-CHW1.anim
+  artifactKey: Guid(9817a13e7f896124da317cb23eb380f0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Chickens/Chicken-White-1/Attack-CHW1.anim using Guid(9817a13e7f896124da317cb23eb380f0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1b9c6c906f38c87d707df692d4498646') in 0.016053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/2DBeginnerTutorialResources/Demo/Demo.unity
+  artifactKey: Guid(5263fbee3e93c884596262f75c9ec418) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Demo/Demo.unity using Guid(5263fbee3e93c884596262f75c9ec418) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fb7eba7e4b861fd2fc6df2c51b1c9ab1') in 0.011687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/DEMO/Prefabs/Pigs-Prefabs/Pig-Dark-1.prefab
+  artifactKey: Guid(b4f7bc59bdf89654687c0e033f1c4eb9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Prefabs/Pigs-Prefabs/Pig-Dark-1.prefab using Guid(b4f7bc59bdf89654687c0e033f1c4eb9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8a562a63dbb5a7969132653b8dc0e2ee') in 0.050313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Sprites/UI/UIHealthFrame.png
+  artifactKey: Guid(94d1f28a5aa0ed94b8d3bd15086f4b63) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Sprites/UI/UIHealthFrame.png using Guid(94d1f28a5aa0ed94b8d3bd15086f4b63) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a485f97181a711b8e6378196991d2a66') in 0.067496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Script/Projectile.cs
+  artifactKey: Guid(f28f273f6cb3858459bbb6c23d0595aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Script/Projectile.cs using Guid(f28f273f6cb3858459bbb6c23d0595aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'de1037ba16e226dcc09a9b77d9243f8c') in 0.016793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_6.asset
+  artifactKey: Guid(80a32c9d5b449b042a0e278d1525a0be) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_6.asset using Guid(80a32c9d5b449b042a0e278d1525a0be) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '502020fc066964312a5decb7f68a9c65') in 0.019753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterRoundCorners_7.asset
+  artifactKey: Guid(ba820e42bae7c2540b625e7154a4dcfc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterRoundCorners_7.asset using Guid(ba820e42bae7c2540b625e7154a4dcfc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8629bdd3f0396e007d66e5df1b9045d2') in 0.017662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-2/Walk-PM2.anim
+  artifactKey: Guid(4d332f45ac831084fbd36affa5f77e4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-2/Walk-PM2.anim using Guid(4d332f45ac831084fbd36affa5f77e4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c0bc44f317f0652b5768319523937173') in 0.017744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Green-2/Idle-PG2.anim
+  artifactKey: Guid(c1d94c7be11e3f244ab924683d5fb109) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Green-2/Idle-PG2.anim using Guid(c1d94c7be11e3f244ab924683d5fb109) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8c895363696c636b91663b2a581f504b') in 0.016561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Dark-2/Attack-PD2.anim
+  artifactKey: Guid(2e1865470647a744eaf2f591770cafac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Dark-2/Attack-PD2.anim using Guid(2e1865470647a744eaf2f591770cafac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dcb9bb6269c99bae64bdbf262cd271e5') in 0.020337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-2/Hurt-PM2.anim
+  artifactKey: Guid(33da469af8a42954f8f15cbd00a6345e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-2/Hurt-PM2.anim using Guid(33da469af8a42954f8f15cbd00a6345e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dfc27d21566bb3c0f42d94528c7eb58d') in 0.018974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-1/Walk-PM1.anim
+  artifactKey: Guid(d4aff9d78da2cc24a860c65129e389ed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-1/Walk-PM1.anim using Guid(d4aff9d78da2cc24a860c65129e389ed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ddac81aaa3a689fd765eadc5ad17899a') in 0.022665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Green-1/Pig-Green-1.controller
+  artifactKey: Guid(620a407c92ba1fb47877cac679577dd4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Green-1/Pig-Green-1.controller using Guid(620a407c92ba1fb47877cac679577dd4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5f5628097ffeb5696fbd27b4612496f4') in 0.042712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Green-1/Attack-PG1.anim
+  artifactKey: Guid(83566b32cfd1a66488660d3746bcbd5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Green-1/Attack-PG1.anim using Guid(83566b32cfd1a66488660d3746bcbd5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '78753b4a7d5bad9a154ca1ad09322bbf') in 0.012948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Green-1/Idle-PG1.anim
+  artifactKey: Guid(d4444f944ea7eaf48b1f74326e06962a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Green-1/Idle-PG1.anim using Guid(d4444f944ea7eaf48b1f74326e06962a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8566f789cc2fbe19875f4935d5e842d4') in 0.009706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-2/Die-PM2.anim
+  artifactKey: Guid(4f1cb39229e48cd429554b63b3a80ba8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-2/Die-PM2.anim using Guid(4f1cb39229e48cd429554b63b3a80ba8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9bce129d51e5dae92b10936ab091f9cd') in 0.015247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-2/Pig-Minner-2.controller
+  artifactKey: Guid(97082ce959efc8d498ac6dc43f295778) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-2/Pig-Minner-2.controller using Guid(97082ce959efc8d498ac6dc43f295778) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '68ff50e77cdd6513ce7d919cdc993e26') in 0.022203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Pink-1/Hurt-PP1.anim
+  artifactKey: Guid(de725676b3dc66c4aafc2c07c5c71846) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Pink-1/Hurt-PP1.anim using Guid(de725676b3dc66c4aafc2c07c5c71846) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ffa9eb053224029ae25df2abdb52724e') in 0.012156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Dark-2/Pig-Dark-2.controller
+  artifactKey: Guid(6d8c6effb675aeb46aa091cc7623b31f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Dark-2/Pig-Dark-2.controller using Guid(6d8c6effb675aeb46aa091cc7623b31f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '309f2a960682f882f1dadbeda1e01453') in 0.035706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Pink-2/Pig-Pink-2.controller
+  artifactKey: Guid(08594bc1d1c8427458d38ece91658964) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Pink-2/Pig-Pink-2.controller using Guid(08594bc1d1c8427458d38ece91658964) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '17468acfecfc644d71a242157a4e6cf9') in 0.024372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Pink-2/Attack-PP2.anim
+  artifactKey: Guid(07dc3b8c8fddd0147923f2b0ee01a515) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Pink-2/Attack-PP2.anim using Guid(07dc3b8c8fddd0147923f2b0ee01a515) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b702b6783fe5a46835726f2e50ffa2b1') in 0.014476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/DEMO/Animation/Chickens/Chicken-Dark-1/Chicken-Dark-1.controller
+  artifactKey: Guid(545a7a823ecb03247b6cb659c3ada2bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Chickens/Chicken-Dark-1/Chicken-Dark-1.controller using Guid(545a7a823ecb03247b6cb659c3ada2bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '74bf24b2b6ab49de5cb25485f96d1bb4') in 0.014380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/DEMO/Animation/Bulls-Animations/Bull-White-1/Hurt-BW1.anim
+  artifactKey: Guid(2697de9348968af44ae5e2e8d36d22e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Bulls-Animations/Bull-White-1/Hurt-BW1.anim using Guid(2697de9348968af44ae5e2e8d36d22e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e5c640d30a3af48d0d64b28af113f4fa') in 0.012097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/DEMO/Animation/Chickens/Chicken-White-2/Hurt-CHW2.anim
+  artifactKey: Guid(744cff324011c8a4496f3fb843b31684) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Chickens/Chicken-White-2/Hurt-CHW2.anim using Guid(744cff324011c8a4496f3fb843b31684) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'deca39733e95e618491d761e1267d659') in 0.011329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Dark-2/Idle-PD2.anim
+  artifactKey: Guid(1371e8a0409db85429ad19129fc89d49) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Dark-2/Idle-PD2.anim using Guid(1371e8a0409db85429ad19129fc89d49) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ccfd5d21dae8297eb987865a31c430c0') in 0.012391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Animations/Up_Run.anim
+  artifactKey: Guid(bad96176737016e448233e35a721afa5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Animations/Up_Run.anim using Guid(bad96176737016e448233e35a721afa5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4f0ff47740c868bd4c5e6b18e146b485') in 0.011543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DEMO/Animation/Cows-Animations/Cow-Dark-1/Cow-Dark-1.controller
+  artifactKey: Guid(921c32a695974354b8de9feb45bd55a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Cows-Animations/Cow-Dark-1/Cow-Dark-1.controller using Guid(921c32a695974354b8de9feb45bd55a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3eda38f98912a84ccbd5852274f7a8da') in 0.015256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_4.asset
+  artifactKey: Guid(ee09a877dd6b4514b9a5efa8f07c7b83) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_4.asset using Guid(ee09a877dd6b4514b9a5efa8f07c7b83) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '89bab9692cc4c390e25a5e3318dbfc8f') in 0.022468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksSquare_7.asset
+  artifactKey: Guid(553b3341700fca74d8a5ecdacd8d222d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksSquare_7.asset using Guid(553b3341700fca74d8a5ecdacd8d222d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '44eb970d336f426cdf986ff67d7a03ef') in 0.019181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-Green-1/Idle-SG1.anim
+  artifactKey: Guid(d04f2f07f0af0484fa1b4351e0bcb7d8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-Green-1/Idle-SG1.anim using Guid(d04f2f07f0af0484fa1b4351e0bcb7d8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4c63e9a792b7fda1d58f7af8a9316dab') in 0.016476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-White-1/Idle-SW1.anim
+  artifactKey: Guid(721aa0c0518f5d143b01f92b76bd114f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-White-1/Idle-SW1.anim using Guid(721aa0c0518f5d143b01f92b76bd114f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '94fc68cf899980cc1c66a74e478665d9') in 0.020210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-Green-2/Hurt-SG2.anim
+  artifactKey: Guid(56396ac661bad9e4bb7be5b4c5748838) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-Green-2/Hurt-SG2.anim using Guid(56396ac661bad9e4bb7be5b4c5748838) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2722f046436df54ac54f92265f79ceb6') in 0.021862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Animations/AnimationClips/Player/RubyHitLeft.anim
+  artifactKey: Guid(c1b9a114c780f974284fddf886871a16) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Animations/AnimationClips/Player/RubyHitLeft.anim using Guid(c1b9a114c780f974284fddf886871a16) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '02be508e6c49b1c8041a3ff60b82834e') in 0.014299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-Minner-2/Sheep-Minner-2.controller
+  artifactKey: Guid(8d7772222263b234f8eb5a1b78787209) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-Minner-2/Sheep-Minner-2.controller using Guid(8d7772222263b234f8eb5a1b78787209) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7df27f760aec3d35364e994ebe364366') in 0.039649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-White-2/Attack-SW2.anim
+  artifactKey: Guid(dba09fdcaf1d3d34fab3c1e9401c29ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-White-2/Attack-SW2.anim using Guid(dba09fdcaf1d3d34fab3c1e9401c29ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7b515ed3a7f10081747dbed38d343ea2') in 0.021318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-Dark-2/Sheep-Dark-2.controller
+  artifactKey: Guid(95cccee7e0ef02442acb3e7bf9ef5f59) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-Dark-2/Sheep-Dark-2.controller using Guid(95cccee7e0ef02442acb3e7bf9ef5f59) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2339ad8af765aa583f1a8367af37cc55') in 0.039805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-Green-1/Walk-SG1.anim
+  artifactKey: Guid(4623957264e38ac4aa731dc016a2e3c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-Green-1/Walk-SG1.anim using Guid(4623957264e38ac4aa731dc016a2e3c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0a6bb8de8741f4bf474c46aa9904870c') in 0.012712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-White-2/Walk-SW2.anim
+  artifactKey: Guid(a71ec2e7cc399e245be37e8c88d4924e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-White-2/Walk-SW2.anim using Guid(a71ec2e7cc399e245be37e8c88d4924e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3777a88373035b27af6ee8fb5503b46c') in 0.021593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Animations/AnimationClips/Player/RubyLaunchUp.anim
+  artifactKey: Guid(d9b5fbc0ad897124c85b1a8fb88a186a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Animations/AnimationClips/Player/RubyLaunchUp.anim using Guid(d9b5fbc0ad897124c85b1a8fb88a186a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '52f0e0080c66f7177389b4925a6a1a5d') in 0.017435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Animations/AnimationClips/Player/RubyLaunchLeft.anim
+  artifactKey: Guid(4ce02915674361f41a756ada650b5a35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Animations/AnimationClips/Player/RubyLaunchLeft.anim using Guid(4ce02915674361f41a756ada650b5a35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'acda5036847f9001b1b605ce29db9bf2') in 0.012587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-Minner-1/Hurt-SM1.anim
+  artifactKey: Guid(cac11d6366fb5df46b7157a13de9db27) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-Minner-1/Hurt-SM1.anim using Guid(cac11d6366fb5df46b7157a13de9db27) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a41ac6d5de1f5eb58b915c7b6a37a957') in 0.014758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-Minner-1/Attack-SM1.anim
+  artifactKey: Guid(2a8015ec60469824681d8ad4ab9b270c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-Minner-1/Attack-SM1.anim using Guid(2a8015ec60469824681d8ad4ab9b270c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c9e5480a1b91d8e0759a62b3ffeda6ad') in 0.017479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-Minner-2/Attack-SM2.anim
+  artifactKey: Guid(4e0ca63ab7d949a46a72207d140a65c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-Minner-2/Attack-SM2.anim using Guid(4e0ca63ab7d949a46a72207d140a65c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ccc76acced303d536b3685fd5aa33332') in 0.019300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Animations/AnimationClips/Player/RubyIdleDown.anim
+  artifactKey: Guid(214bcd861ce37b3409eea1b7e32210b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Animations/AnimationClips/Player/RubyIdleDown.anim using Guid(214bcd861ce37b3409eea1b7e32210b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4cef1685f936ea8705004162e543cc0a') in 0.015396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-Minner-2/Die-SM2.anim
+  artifactKey: Guid(37a99043ff94a0a41ac959ff3f7d8192) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-Minner-2/Die-SM2.anim using Guid(37a99043ff94a0a41ac959ff3f7d8192) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3819f41795c7351b887411b7bd804465') in 0.014875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-Minner-1/Die-SM1.anim
+  artifactKey: Guid(d2895fd5998e55a48bc937ab12887f35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-Minner-1/Die-SM1.anim using Guid(d2895fd5998e55a48bc937ab12887f35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ad51b1c66719c4a0c5f299324fcb828a') in 0.015132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-White-2/Hurt-SW2.anim
+  artifactKey: Guid(318b8aa54a5e04e4b8dcd2e7ec6a6f0e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-White-2/Hurt-SW2.anim using Guid(318b8aa54a5e04e4b8dcd2e7ec6a6f0e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c0d658053ef30c2ccc60e23898a587ef') in 0.023556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/DEMO/Animation/Sheeps-Animations/Sheep-Dark-2/Die-SD2.anim
+  artifactKey: Guid(2838a23d5b42ea3428bf0103624fad8f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Sheeps-Animations/Sheep-Dark-2/Die-SD2.anim using Guid(2838a23d5b42ea3428bf0103624fad8f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cbfc9ebd4edb89e7aa0567c067244e79') in 0.017972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/DEMO/Animation/Bulls-Animations/Bull-Minner-1/Attack-BM1.anim
+  artifactKey: Guid(aa128674a6d32954eb1f6c69dfb1abf3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Bulls-Animations/Bull-Minner-1/Attack-BM1.anim using Guid(aa128674a6d32954eb1f6c69dfb1abf3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7cfc788a2551d5f77d794bfc0acd5d34') in 0.017441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-1/Idle-PM1.anim
+  artifactKey: Guid(af2da8398e59da24ab58373a7edf62b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-1/Idle-PM1.anim using Guid(af2da8398e59da24ab58373a7edf62b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2d4049aa2989afe72a6e8fc0a8f36f8a') in 0.026965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/DEMO/Texture/Bulls-Texture/Bull-Green.png
+  artifactKey: Guid(51415bd898c6b4545855fa7a4f5dc045) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Texture/Bulls-Texture/Bull-Green.png using Guid(51415bd898c6b4545855fa7a4f5dc045) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '78a29cc1f12c1d18300d71f3ca8147b6') in 0.057853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Sprites/Environmnent/TreeForeground.png
+  artifactKey: Guid(e059f0fb3f4af3e47b60d322bf43a7d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Sprites/Environmnent/TreeForeground.png using Guid(e059f0fb3f4af3e47b60d322bf43a7d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8c93a590ffd5d5a97dfe9d122f091770') in 0.040884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterSquareCorners_7.asset
+  artifactKey: Guid(67c7c22f57954d045bbbf7cb182fc7f8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterSquareCorners_7.asset using Guid(67c7c22f57954d045bbbf7cb182fc7f8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6460a67ecc97d6a7a7007f163440db32') in 0.020732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_2.asset
+  artifactKey: Guid(720fe47a052c33743b0f842475cafa40) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_2.asset using Guid(720fe47a052c33743b0f842475cafa40) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '153659982a3d949db2460fed139b925e') in 0.023651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/DEMO/Texture/Chicken-Texture/Chicken-Green-1.png
+  artifactKey: Guid(63f478ad501c54547bcaa6bcfdb2e2df) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Texture/Chicken-Texture/Chicken-Green-1.png using Guid(63f478ad501c54547bcaa6bcfdb2e2df) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '90bc8dee9b1f7ca8c57b9419dfe0e9dc') in 0.056219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
+  artifactKey: Guid(85187c2149c549c5b33f0cdb02836b17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader using Guid(85187c2149c549c5b33f0cdb02836b17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ce72cd6092ea4721b7cd1b336dbf1e33') in 0.040258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-1/Pig-Minner-1.controller
+  artifactKey: Guid(a934b1f75cab0604aa10a6eb973d4885) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Animation/Pigs-Animations/Pig-Minner-1/Pig-Minner-1.controller using Guid(a934b1f75cab0604aa10a6eb973d4885) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0b996b4a77e0e538141395a7008a6ae5') in 0.024028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/DEMO/Texture/Pigs-Texture/Pig-Minner-1.png
+  artifactKey: Guid(613b80bd4162319428399b62babbdf9b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/DEMO/Texture/Pigs-Texture/Pig-Minner-1.png using Guid(613b80bd4162319428399b62babbdf9b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fe657d444a50b015f00da0492506cfb5') in 0.057314 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
