@@ -13,7 +13,7 @@ public class DamageZone : MonoBehaviour
         if (controller != null)
         {
             controller.ChangeHealth(-1);
-            controller.PlaySound(collectedClip);
+            //controller.PlaySound(collectedClip);
         }
     }
 }

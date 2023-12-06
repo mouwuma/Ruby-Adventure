@@ -15,7 +15,7 @@ public class EnemyController : MonoBehaviour
     public bool broken = true;
     
     Animator animator;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -80,9 +80,14 @@ public class EnemyController : MonoBehaviour
     //Public because we want to call it from elsewhere like the projectile script
     public void Fix()
     {
+        RubyController player = GameObject.FindGameObjectWithTag("Player").GetComponent<RubyController>();
+
         broken = false;
         rigidbody2D.simulated = false;
-        //optional if you added the fixed animation
+        if (player != null)
+        {
+            player.FixRobotCommand(1);
+        }
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
     }
