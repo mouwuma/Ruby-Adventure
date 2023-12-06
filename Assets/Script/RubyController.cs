@@ -12,7 +12,9 @@ public class RubyController : MonoBehaviour
 
     public AudioClip throwSound;
     public AudioClip hitSound;
-    
+    //ChangeStart
+    public AudioClip tripSound;
+    //ChangeEnd
     public int health { get { return currentHealth; }}
     int currentHealth;
 
@@ -23,11 +25,17 @@ public class RubyController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
+    public ParticleSystem healthParticles;
+    public ParticleSystem hitParticles;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1,0);
 
     AudioSource audioSource;
+    //ChangeStart
+    bool isMovementEnabled = true;
+    Coroutine stopMovementCoroutine;
+    //ChangeEnd
     
     // Start is called before the first frame update
     void Start()
@@ -38,10 +46,12 @@ public class RubyController : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
     }
+    
 
     // Update is called once per frame
     void Update()
     {
+        
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
                 
@@ -84,18 +94,31 @@ public class RubyController : MonoBehaviour
     }
     void FixedUpdate()
     {
+        //ChangeStart
+        if (isMovementEnabled)
+    {
         Vector2 position = rigidbody2d.position;
         position.x = position.x + speed * horizontal * Time.deltaTime;
         position.y = position.y + speed * vertical * Time.deltaTime;
-
         rigidbody2d.MovePosition(position);
     }
+    else
+    {
+            rigidbody2d.velocity -= rigidbody2d.velocity * 0.01f * Time.deltaTime;
+        if (rigidbody2d.velocity.magnitude < 0.01f)
+        {
+            rigidbody2d.velocity = Vector2.zero;
+        }
+    }
+    }
+    //ChangeEnd
 
     public void ChangeHealth(int amount)
     {
         if (amount < 0)
         {
             animator.SetTrigger("Hit");
+            hitParticles.Play();
             if (isInvincible)
                 return;
             
@@ -103,7 +126,10 @@ public class RubyController : MonoBehaviour
             invincibleTimer = timeInvincible;
             PlaySound(hitSound);
         }
-        
+        if (amount > 0)
+        {
+            healthParticles.Play();
+        }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);    
     }
@@ -123,4 +149,21 @@ public class RubyController : MonoBehaviour
     {
         audioSource.PlayOneShot(collectedClip);
     }
+    //ChangeStart
+    public void Trip()
+    {
+        if (isMovementEnabled)
+        {
+                PlaySound(tripSound);
+                isMovementEnabled = false;
+                animator.SetTrigger("Trip");
+                stopMovementCoroutine = StartCoroutine(StopMovementForSeconds(2f));
+        }
+    }
+    IEnumerator StopMovementForSeconds(float duration)
+    {
+            yield return new WaitForSeconds(duration);
+            isMovementEnabled = true;
+    }
+        //ChangeEnd
 }
