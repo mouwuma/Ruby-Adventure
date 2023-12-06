@@ -2,29 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class RubyController : MonoBehaviour
 {
     public float speed = 3.0f;
     
     public int maxHealth = 5;
-    public int fixedRobots = 0;
+    public int bookCollect = 1;
     public int maxRobots = 2;
 
     public GameObject projectilePrefab;
     public GameObject LoseEndGame;
-    //public GameObject WinEndGame;
+    public GameObject WinEndGame;
+
+    public GameObject bookCollectUI;
 
     public AudioClip throwSound;
     public AudioClip hitSound;
+    public AudioClip tripSound;
+    public AudioClip winSound;
+    public AudioClip loseSound;
     
     public int health { get { return currentHealth; }}
     int currentHealth;
+    int fixedRobots;
+    public string fixedRobotsString;
 
     public float timeInvincible = 2.0f;
     bool isInvincible;
     float invincibleTimer;
+
+    //Javon Part Start
+    public AudioClip sheepSound;
+    //bool speedBoost;
+    float speedTimer;
+    float speedTracker;
+    //Javon Part End
     
     Rigidbody2D rigidbody2d;
     float horizontal;
@@ -34,6 +48,8 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1,0);
 
     AudioSource audioSource;
+    bool isMovementEnabled = true;
+    Coroutine stopMovementCoroutine;
 
     public ParticleSystem healthParticles;
     public ParticleSystem hitParticles;
@@ -44,9 +60,11 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         LoseEndGame.SetActive(false);
-        //WinEndGame.SetActive(false);
+        bookCollectUI.SetActive(false);
+        WinEndGame.SetActive(false);
         currentHealth = maxHealth;
-        //EnemyController = gameObject.GetComponent<EnemyController>();
+        fixedRobots = 0;
+        bookCollect = 0;
         
         audioSource = GetComponent<AudioSource>();
     }
@@ -54,6 +72,8 @@ public class RubyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        fixedRobotsString = fixedRobots.ToString(); 
+
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
                 
@@ -76,6 +96,7 @@ public class RubyController : MonoBehaviour
                 isInvincible = false;
         }
 
+
         if(Input.GetKeyDown(KeyCode.C))
         {
             Launch();
@@ -87,15 +108,26 @@ public class RubyController : MonoBehaviour
             if (hit.collider != null)
             {       
                 NonPlayableCharacter character = hit.collider.GetComponent<NonPlayableCharacter>();
+                //SheepKing character2 = hit.collider.GetComponent<SheepKing>();
                 if (character != null)
                 {
-                    character.DisplayDialog();               
+                    if (bookCollect == 0){
+                        character.DisplayDialog();  
+                    }
+                    if (bookCollect == 1){
+                        character.DisplayDialogPostBook();  
+                    }             
                 }
+                //if (character2 != null)
+                //{
+                    //character2.DisplayDialog();             
+                //}
             }
         }
 
         if (currentHealth == 0)
         {
+            PlaySound(loseSound);
             GetComponent<Rigidbody2D>().simulated = false;
             animator.SetTrigger("Dead");
             LoseEndGame.SetActive(true);
@@ -105,28 +137,36 @@ public class RubyController : MonoBehaviour
             }  
         }
 
-        //if (broken = false)
-        //{
-            //fixedRobots++;
-            //if (fixedRobots == maxRobots)
-            //{
-                //GetComponent<Rigidbody2D>().simulated = false;
-                //animator.SetTrigger("Dead");
-                //WinEndGame.SetActive(true);
-                //if(Input.GetKeyDown(KeyCode.R))
-                //{
-                    //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                //}  
-            //}
-        //}
+        if (bookCollect == 1 && fixedRobots == 2)
+        {
+            GetComponent<Rigidbody2D>().simulated = false;
+            animator.SetTrigger("Dead");
+            PlaySound(winSound);
+            WinEndGame.SetActive(true);
+            if(Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }  
+        }
     }
     void FixedUpdate()
     {
-        Vector2 position = rigidbody2d.position;
-        position.x = position.x + speed * horizontal * Time.deltaTime;
-        position.y = position.y + speed * vertical * Time.deltaTime;
+        if (isMovementEnabled)
+        {
+            Vector2 position = rigidbody2d.position;
+            position.x = position.x + speed * horizontal * Time.deltaTime;
+            position.y = position.y + speed * vertical * Time.deltaTime;
 
-        rigidbody2d.MovePosition(position);
+            rigidbody2d.MovePosition(position);
+        }
+        else
+        {
+            rigidbody2d.velocity -= rigidbody2d.velocity * 0.01f * Time.deltaTime;
+            if (rigidbody2d.velocity.magnitude < 0.01f)
+            {
+                rigidbody2d.velocity = Vector2.zero;
+            }
+        }
     }
 
     public void ChangeHealth(int amount)
@@ -153,13 +193,17 @@ public class RubyController : MonoBehaviour
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);    
     }
 
-    //public void GameOver()
-    //{
-      //  if (currentHealth <= 0)
-        //{
-          //  GamePlayController.instance.RestartGame();
-        //}
-    //}
+    public void CollectBook(int amount)
+    {
+        bookCollect = 1;
+        bookCollectUI.SetActive(true);
+    }
+
+    public void FixRobotCommand(int amount)
+    {
+        fixedRobots = Mathf.Clamp(fixedRobots + amount, 0, maxRobots);
+        Debug.Log(fixedRobots);
+    }
 
     void Launch()
     {
@@ -177,4 +221,31 @@ public class RubyController : MonoBehaviour
         audioSource.PlayOneShot(collectedClip);
     }
     
+    public void Trip()
+    {
+        if (isMovementEnabled)
+        {
+            PlaySound(tripSound);
+            isMovementEnabled = false;
+            animator.SetTrigger("Trip");
+            stopMovementCoroutine = StartCoroutine(StopMovementForSeconds(2f));
+        }
+    }
+    IEnumerator StopMovementForSeconds(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        isMovementEnabled = true;
+    }
+
+    public void PoweredUp(bool amount)
+    {
+        //speedBoost = true;
+        speedTimer = 10.0f;
+        speed = 6.0f;
+        speedTracker = speedTimer;
+
+        isInvincible = true;
+        timeInvincible = 10.0f;
+        invincibleTimer = timeInvincible;
+    }
 }
